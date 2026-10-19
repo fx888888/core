@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#071a31">
+  <title>CORE 捕鱼游戏</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <main class="shell">
+    <header><div class="logo">🐟</div><div><h1>CORE 捕鱼乐园</h1><p>连接钱包 · 购买弹药 · 开始捕鱼</p></div></header>
+    <section class="hero"><div class="sun"></div><div class="fish f1">🐠</div><div class="fish f2">🐟</div><div class="fish f3">🦀</div><div class="bubble b1"></div><div class="bubble b2"></div><h2>深海寻宝</h2><p>你的下一次出海，从这里开始</p></section>
+    <section class="panel">
+      <div class="row"><span>网络</span><strong id="network">尚未连接</strong></div>
+      <div class="row"><span>钱包</span><strong id="wallet">未连接</strong></div>
+      <div class="row"><span>弹药包价格</span><strong id="price">连接合约后显示</strong></div>
+      <button id="connect">连接钱包</button>
+      <label for="packs">购买弹药包数量（1–100）</label>
+      <input id="packs" type="number" min="1" max="100" value="1">
+      <button id="buy" disabled>购买弹药包</button>
+      <button id="use" class="secondary" disabled>消耗 1 包弹药</button>
+      <p id="status" role="status">先连接钱包，再配置已部署的 FishingShop 合约地址。</p>
+    </section>
+    <section class="notice"><strong>重要说明</strong><p>这是游戏前端起始版。当前没有链上随机数、中奖返奖或收益承诺；分数与捕鱼动画尚未连接后端。部署主网前请先测试合约并审查代码。</p></section>
+    <footer>CORE Chain · Community Game Starter</footer>
+  </main>
+  <script src="./app.js"></script>
+</body>
+</html>
