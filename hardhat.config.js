@@ -5,7 +5,7 @@ const key = process.env.PRIVATE_KEY;
 const accounts = key ? [key.startsWith("0x") ? key : "0x" + key] : [];
 
 module.exports = {
-  defaultNetwork: "coreTestnet",
+  defaultNetwork: "hardhat",
   solidity: {
     version: "0.8.24",
     settings: {
