@@ -1,0 +1,17 @@
+{
+  "name": "core-fishing-game",
+  "version": "1.0.0",
+  "private": true,
+  "description": "CORE-chain fishing game starter with an on-chain ammo shop",
+  "scripts": {
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "deploy:testnet": "hardhat run scripts/deploy.js --network coreTestnet",
+    "deploy:mainnet": "hardhat run scripts/deploy.js --network core"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "dotenv": "^16.4.5",
+    "hardhat": "^2.22.17"
+  }
+}
